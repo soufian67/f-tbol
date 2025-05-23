@@ -1,0 +1,185 @@
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #c70000;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #202020;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #e60000;
+    }
+
+    .main-news {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .news-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .news-card img {
+        width: 100%;
+        height: auto;
+      }
+
+
+    .news-card h3 {
+      margin: 15px;
+      font-size: 1.3em;
+      color: #c70000;
+    }
+
+    .news-card p {
+      margin: 0 15px 15px;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    .news-card a {
+      display: block;
+      margin: 0 15px 15px;
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .news-card a:hover {
+      text-decoration: underline;
+    }
+
+    .login-section {
+      max-width: 400px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .login-section h2 {
+      text-align: center;
+      color: #c70000;
+    }
+
+    .login-section input[type="text"],
+    .login-section input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .login-section input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #c70000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-section .registro-link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-section .registro-link a {
+      color: #c70000;
+      text-decoration: none;
+    }
+
+    .login-section .registro-link a:hover {
+      text-decoration: underline;
+    }
+
+    .login-section input[type="submit"]:hover {
+      background-color: #a00000;
+    }
+
+    .bienvenida-usuario {
+      text-align: center;
+      background-color: #ffeaea;
+      color: #c70000;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin: 15px auto 0;
+      padding: 10px 20px;
+      max-width: 600px;
+      border-radius: 8px;
+      border-left: 5px solid #c70000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     }
+
+     .cerrar-sesion {
+        display: block;
+        margin: 10px auto 0;
+        background-color: #a00000;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .cerrar-sesion:hover {
+        background-color: #7a0000;
+      }
+
+    .fact-section {
+      background-color: #ffeaea;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 800px;
+      border-left: 5px solid #c70000;
+    }
+
+    .fact-section h2 {
+      color: #c70000;
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #202020;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
