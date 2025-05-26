@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol Total</title>
+    <link rel="stylesheet" href="futbol.css">
+    <link rel="icon" href="icono/futbol.jpg" type="image/x-icon">
+  </head>
+  <body>
+
+    <header>
+      <h1>Fútbol Total</h1>
+      <p>Noticias, resultados, análisis y más del mundo del fútbol</p>
+    </header>
+
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="ultimas_noticias.html">Últimas Noticias</a>
+      <a href="ligas.html">Ligas</a>
+      <a href="champions.html">Champions</a>
+      <a href="selecciones.html">Selecciones</a>
+      <a href="multimedia.html">Multimedia</a>
+    </nav>
+
+    <section class="main-news">
+      <div class="news-card">
+        <img src="imagenes de Inicio/real madrid/kylian-mbappe-cabizbajo.jpeg" alt="Real Madrid">
+        <h3>Una temporada para olvidar del Real Madrid</h3>
+        <p>No ha sido una gran temporada para este Real Madrid que pintaba muy bien con la incorporación de 
+          Mbappé y su gran actuación del año pasado.</p>
+        <a href="leer_mas1.html">Leer más</a>
+      </div>
+      <div class="news-card">
+        <img src="imagenes de Inicio/mundial/mundial de clubes de fifa.jpg" alt="Mundial">
+        <h3>El gran premio para el ganador del Mundial de Clubes FIFA</h3>
+        <p>Un premio de 125 millones de USD para el ganador entre los 32 participantes del torneo.</p>
+        <a href="leer_mas2.html">Leer más</a>
+      </div>
+      <div class="news-card">
+        <img src="imagenes de Inicio/champions league/champions league.jfif" alt="Champions">
+        <h3>La final de la Champions más cerca que nunca</h3>
+        <p>El momento más esperado del año en el que se enfrentan el PSG y el Inter en una final de Champions.</p>
+        <a href="leer_mas3.html">Leer más</a>
+      </div>
+    </section>
+
+    <section class="login-section">
+      <h2>Inicia Sesión</h2>
+      <form onsubmit="guardarUsuario(event)">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+
+        <label for="pass">Contraseña:</label>
+        <input type="password" id="pass" name="pass" placeholder="Contraseña" required>
+
+        <input type="submit" value="Entrar">
+      </form>
+
+      <p class="registro-link">
+        ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+      </p>
+    </section>
+
+    <section class="fact-section">
+      <h2>¿Sabías que?</h2>
+      <p>El fútbol cuenta con más de 4 mil millones de seguidores en el mundo, siendo 
+        el deporte más popular de la historia.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Fútbol Total. Todos los derechos reservados.</p>
+      <p>Diseñado por SOUFIAN HOUMADI</p>
+    </footer>
+
+    <script>
+        function guardarUsuario(event) {
+          event.preventDefault(); 
+          const usuario = document.getElementById('usuario').value.trim();
+          if (usuario) {
+            localStorage.setItem('usuarioFutbol', usuario);
+            location.reload(); 
+          }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+          const usuario = localStorage.getItem('usuarioFutbol');
+          if (usuario) {
+            
+            const saludo = document.createElement('p');
+            saludo.textContent = `Hola, ${usuario} Bienvenido a Fútbol Total ⚽`;
+            saludo.classList.add('bienvenida-usuario');
+            document.querySelector('header').appendChild(saludo);
+
+
+            const botonCerrar = document.createElement('button');
+            botonCerrar.textContent = 'Cerrar sesión';
+            botonCerrar.classList.add('cerrar-sesion');
+            botonCerrar.onclick = () => {
+              localStorage.removeItem('usuarioFutbol');
+              location.reload(); 
+            };
+            document.querySelector('header').appendChild(botonCerrar);
+          }
+        });
+    </script>
+
+  </body>
+</html>
