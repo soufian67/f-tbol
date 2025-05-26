@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multimedia - Fútbol Total</title>
+  <link rel="shortcut icon" href="index.html"/>
+  <link rel="icon" href="icono/futbol.jpg" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #c70000;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #202020;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #e60000;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #c70000;
+    }
+
+    .image-box {
+  text-align: center;
+    }
+
+    .caption {
+     margin-top: 8px;
+     font-size: 0.95em;
+     color: #444;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .gallery img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery .image-box {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .video-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .video-box {
+    text-align: center;
+    max-width: 350px;
+    }
+
+    .video-box iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    }
+
+    .caption {
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #444;
+    }
+    
+    footer {
+      background-color: #202020;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fútbol Total</h1>
+    <p>Fotos y videos del mejor fútbol del mundo</p>
+  </header>
+
+  <nav>
+    <a href="index2.html">Inicio</a>
+    <a href="ultimas_noticias.html">Últimas Noticias</a>
+    <a href="ligas.html">Ligas</a>
+    <a href="champions.html">Champions</a>
+    <a href="selecciones.html">Selecciones</a>
+    <a href="multimedia.html">Multimedia</a>
+  </nav>
+
+    <h2 class="section-title">Galería de Imágenes</h2>
+    <section class="gallery">
+    <div class="image-box">
+        <img src="multimedia/gol minuto/gol ultimo minuto.jpg" alt="Gol de último minuto" />
+        <p class="caption">Gol de último minuto</p>
+    </div>
+    <div class="image-box">
+        <img src="multimedia/celebración título/celebracion titulo.jpg" alt="Celebración del título" />
+        <p class="caption">Celebración del título</p>
+    </div>
+    <div class="image-box">
+        <img src="multimedia/aficion estadio/aficion .jpg" alt="Afición en el estadio">        
+        <p class="caption">Afición en el estadio</p>
+    </div>
+    <div class="image-box">
+        <img src="multimedia/entrenamiento/entrenamiento.jpg" alt="Entrenamiento" />
+        <p class="caption">Entrenamiento</p>
+    </div>
+    </section>
+
+  <h2 class="section-title">Videos Destacados</h2>
+    <section class="video-gallery">
+    <div class="video-box">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/rmO96qcYYiE" 
+        title="La Historia del Fútbol en 10 minutos" frameborder="0" allowfullscreen></iframe>
+        <p class="caption">La Historia del Fútbol en 10 minutos</p>
+    </div>
+
+    <div class="video-box">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/kiD-h64L-w8" 
+        title="¿Cómo surgieron las tácticas en el fútbol?" frameborder="0" allowfullscreen></iframe>
+        <p class="caption">¿Cómo surgieron las tácticas en el fútbol?</p>
+    </div>
+
+    <div class="video-box">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/9uGh8-rIRRg" 
+        title="Jugadas que valen la pena ver 100 veces" frameborder="0" allowfullscreen></iframe>
+        <p class="caption">Jugadas que valen la pena ver 100 veces</p>
+    </div>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 Fútbol Total. Todos los derechos reservados.</p>
+    <p>Diseñado por SOUFIAN HOUMADI</p>
+  </footer>
+
+</body>
+</html>
